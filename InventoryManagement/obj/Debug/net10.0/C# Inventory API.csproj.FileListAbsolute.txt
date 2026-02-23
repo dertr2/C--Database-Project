@@ -32,3 +32,6 @@
 /Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/C# Inventory API.pdb
 /Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/C# Inventory API.genruntimeconfig.cache
 /Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/ref/C# Inventory API.dll
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/bin/Debug/net10.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll
