@@ -1,0 +1,34 @@
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/bin/Debug/net10.0/appsettings.Development.json
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/bin/Debug/net10.0/appsettings.json
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/bin/Debug/net10.0/C# Inventory API.staticwebassets.endpoints.json
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/bin/Debug/net10.0/C# Inventory API
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/bin/Debug/net10.0/C# Inventory API.deps.json
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/bin/Debug/net10.0/C# Inventory API.runtimeconfig.json
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/bin/Debug/net10.0/C# Inventory API.dll
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/bin/Debug/net10.0/C# Inventory API.pdb
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/bin/Debug/net10.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/bin/Debug/net10.0/Microsoft.OpenApi.dll
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/C# Inventory API.csproj.AssemblyReference.cache
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/rpswa.dswa.cache.json
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/C# Inventory API.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/C# Inventory API.AssemblyInfoInputs.cache
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/C# Inventory API.AssemblyInfo.cs
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/C# Inventory API.csproj.CoreCompileInputs.cache
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/C# Inventory API.MvcApplicationPartsAssemblyInfo.cs
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/C# Inventory API.MvcApplicationPartsAssemblyInfo.cache
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/C# Inventory API.sourcelink.json
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/rjimswa.dswa.cache.json
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/scopedcss/bundle/C# Inventory API.styles.css
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/staticwebassets.build.json
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/staticwebassets.build.json.cache
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/staticwebassets.development.json
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/swae.build.ex.cache
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/C# Inven.119DBAA2.Up2Date
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/C# Inventory API.dll
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/refint/C# Inventory API.dll
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/C# Inventory API.pdb
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/C# Inventory API.genruntimeconfig.cache
+/Users/dertr/Desktop/C# Database Project/InventoryManagement/obj/Debug/net10.0/ref/C# Inventory API.dll
