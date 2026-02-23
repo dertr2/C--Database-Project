@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using InventoryManagement.Model;
+using Microsoft.Data.SqlClient;
 
 namespace InventoryManagement.Controllers;
 
@@ -7,9 +8,6 @@ namespace InventoryManagement.Controllers;
 [Route("api/[controller]")]
 public class ProductController : ControllerBase
 {
-    [HttpGet]
-    public IActionResult Get()
-    {
         // this basically assigns a varialble to type IConfiguration
         private readonly IConfiguration _config;
 
@@ -35,6 +33,38 @@ public class ProductController : ControllerBase
         FROM Products p
         JOIN Categories c ON p.CategoryId = c.Id 
         ORDER BY p.Id;"; 
+
+        var results = new List<Product>();
+
+        await using var conn = new SqlConnection(connStr);
+        await conn.OpenAsync();
+
+        await using var cmd = new SqlCommand(sql, conn);
+        await using var reader = await cmd.ExecuteReaderAsync();
+
+        while (await reader.ReadAsync())
+        {
+            var product = new Product
+            {
+                Id = reader.GetInt32(reader.GetOrdinal("Id")),
+                Name = reader.GetString(reader.GetOrdinal("Name")),
+                Price = reader.GetDecimal(reader.GetOrdinal("Price")),
+                Quantity = reader.GetInt32(reader.GetOrdinal("Quantity")),
+                InStock = reader.GetBoolean(reader.GetOrdinal("InStock")),
+                CategoryId = reader.GetInt32(reader.GetOrdinal("CategoryId")),
+                CreatedDate = reader.GetDateTime(reader.GetOrdinal("CreatedDate")),
+                Category = new Category
+                {
+                    Id = reader.GetInt32(reader.GetOrdinal("Category_Id")),
+                    Name = reader.GetString(reader.GetOrdinal("Category_Name"))
+                }
+            };
+
+            results.Add(product);
+        }
+
+        return Ok(results);
     }
 }
-}
+
+
