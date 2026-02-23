@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using InventoryManagement.Model;
 
 namespace InventoryManagement.Controllers;
 
@@ -9,6 +10,24 @@ public class ProductController : ControllerBase
     [HttpGet]
     public IActionResult Get()
     {
-        return Ok("Product API working");
+        var products = new List<Product>
+        {
+            new Product
+            {
+              Id = 1,  
+              Name = "Apples",
+              Price = 4.50m,
+              Quantity = 46,
+              InStock =  true,
+              CategoryId = 1,
+              Category = new Category
+              {
+                  Id = 1,
+                  Name = "Fruits"
+              }
+            }
+        };
+
+        return Ok(products);
     }
 }

@@ -1,4 +1,4 @@
-namespace InventoryManagement.Models;
+namespace InventoryManagement.Model;
 
 public class Category
 {

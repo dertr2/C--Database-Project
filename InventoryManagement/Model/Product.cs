@@ -1,4 +1,4 @@
-namespace InvencotryManagement.Model;
+namespace InventoryManagement.Model;
 
 public class Product
 {
