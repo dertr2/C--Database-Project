@@ -36,13 +36,13 @@ public class ProductController : ControllerBase
 
         var results = new List<Product>();
 
-        await using var conn = new SqlConnection(connStr);
-        await conn.OpenAsync();
+        await using var conn = new SqlConnection(connStr); // instantiates connection to sql database
+        await conn.OpenAsync(); // this authenticates the connection and "starts"
 
-        await using var cmd = new SqlCommand(sql, conn);
-        await using var reader = await cmd.ExecuteReaderAsync();
+        await using var cmd = new SqlCommand(sql, conn); // instantiates sql commmands to execute inside the sql server
+        await using var reader = await cmd.ExecuteReaderAsync(); // reads the first row returned from SQLt
 
-        while (await reader.ReadAsync())
+        while (await reader.ReadAsync()) // returns entire query for us to add a product
         {
             var product = new Product
             {
