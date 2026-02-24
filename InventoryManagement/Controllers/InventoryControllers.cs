@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using InventoryManagement.Model;
 using Microsoft.Data.SqlClient;
+using System.Data.Common;
+using System.Dynamic;
 
 namespace InventoryManagement.Controllers;
 
@@ -19,7 +21,7 @@ public class ProductController : ControllerBase
 
     [HttpGet]
     //gets a http response where in this case, getting the database connection called "DefaultConnection"
-    public async Task<IActionResult> Get()
+    public async Task<IActionResult> GetAllData()
     {
         var connStr = _config.GetConnectionString("DefaultConnection");
         // to make sure that we know theres a problem if we're unable to fetch it
@@ -64,7 +66,70 @@ public class ProductController : ControllerBase
         }
 
         return Ok(results);
+
+        
+    }
+    
+    // Requires: id > 0
+    // Effects: Returns product, otherwise return error
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetById(int id)
+    {
+        return null;
+    }
+    // Requires: valid string
+    // Effects: Returns product, otherwise return error
+    [HttpGet("{name}")]
+    public async Task<IActionResult> GetByName(String name)
+    {
+        return null;
+    }
+    // Requires: not invalid product
+    // Modifies: changes products table and adds a new one
+    // Effects: New row appears, otherwise return error including duplicates
+    [HttpPost]
+    public async Task<IActionResult> Create(Product product)
+    {
+        return null;
+    }
+
+    // Requires: id > 0
+    // Modifies: changes the product table
+    // Effects: Updates a product in table, potentially avoid duplicates?
+    [HttpPut("{id}")]
+    public async Task<IActionResult> UpdateById(int id, Product product)
+    {
+        return null;
+    }
+
+    // Requires: valid string
+    // Modifies: changes the product table
+    // Effects: Updates a product in the table, potentially avoid duplicates?
+    [HttpPut("{name}")]
+    public async Task<IActionResult> UpdateByName(string name, Product product)
+    {
+        return null;
+    }
+
+    // Requires: id > 0
+    // Modifies: changes the product table
+    // Effects: Removes a product in the table unless already removed
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteById(int id)
+    {
+        return null;
+    }
+
+    // Requires: valid string
+    // Modifies: changes the product table
+    // Effects: Removes a product in the table unless already removed
+    [HttpDelete("{name}")]
+    public async Task<IActionResult> DeleteByName(string name)
+    {
+        return null;
     }
 }
+    
+
 
 
