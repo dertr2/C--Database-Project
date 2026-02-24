@@ -29,7 +29,7 @@ public class ProductController : ControllerBase
         // executes these set of statements to retrieve the database.
         const string sql = @"
         SELECT p.Id, p.Name, p.Price, p.Quantity, p.InStock, p.CategoryId, p.CreatedDate,
-        c.Id AS Category_Id, c.Name AS Category_Name
+        c.Id AS Category_Id, c.Category AS Category_Name
         FROM Products p
         JOIN Categories c ON p.CategoryId = c.Id 
         ORDER BY p.Id;"; 
@@ -55,8 +55,8 @@ public class ProductController : ControllerBase
                 CreatedDate = reader.GetDateTime(reader.GetOrdinal("CreatedDate")),
                 Category = new Category
                 {
-                    Id = reader.GetInt32(reader.GetOrdinal("Category_Id")),
-                    Name = reader.GetString(reader.GetOrdinal("Category_Name"))
+                    CategoryId = reader.GetInt32(reader.GetOrdinal("Category_Id")),
+                    CategoryName = reader.GetString(reader.GetOrdinal("Category_Name"))
                 }
             };
 

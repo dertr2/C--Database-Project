@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+
 namespace InventoryManagement.Model;
 
 public class Product
@@ -7,6 +9,7 @@ public class Product
     public decimal Price {get; set;}
     public int Quantity {get; set;}
     public bool InStock {get; set;}
+    [JsonIgnore]
     public int CategoryId { get; set; }
     public Category? Category { get; set; }
     public DateTime CreatedDate {get; set;}
