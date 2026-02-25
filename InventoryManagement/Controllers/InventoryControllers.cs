@@ -83,7 +83,7 @@ public async Task<IActionResult> GetById(int id)
 
     const string sql = @"
         SELECT p.Id, p.Name, p.Price, p.Quantity, p.InStock, p.CategoryId, p.CreatedDate,
-               c.Id AS Category_Id, c.Name AS Category_Name
+               c.Id AS Category_Id, c.Category AS Category_Name
         FROM Products p
         JOIN Categories c ON p.CategoryId = c.Id
         WHERE p.Id = @Id;";
